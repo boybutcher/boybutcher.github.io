@@ -19,7 +19,7 @@ const navChildren = [
   aboutLink,
 ];
 
-navChildren.map((navItem) => (
+navChildren.map(navItem => (
   navBar.appendChild(navItem)
 ))
 

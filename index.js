@@ -1,6 +1,7 @@
 // component locations
 const scripts = [
   './client/navbar/index.js',
+  './client/projects/index.js',
 ];
 
 // creates 'script' tag elements
@@ -10,7 +11,7 @@ const scriptConstructor = src => {
   return script;
 }
 
-// appends script tags to document head
+// appends/injects script tags to document head
 const appendScript = script => {
   document.getElementsByTagName('head')[0].appendChild(scriptConstructor(script));
 }
