@@ -3,8 +3,24 @@ navBar.className = 'nav-bar';
 
 const navHeader = document.createElement('h1');
 navHeader.className = 'nav-header';
-navHeader.innerHTML = 'Bryan Nguyen';
+navHeader.innerHTML = 'bryan nguyen';
 
-navBar.appendChild(navHeader);
+const projectsLink = document.createElement('div');
+projectsLink.className = 'projects-link';
+projectsLink.innerHTML = 'projects';
+
+const aboutLink = document.createElement('div');
+aboutLink.className = 'about-link';
+aboutLink.innerHTML = 'about';
+
+const navChildren = [
+  navHeader,
+  projectsLink,
+  aboutLink,
+];
+
+navChildren.map((navItem) => (
+  navBar.appendChild(navItem)
+))
 
 document.body.appendChild(navBar);
