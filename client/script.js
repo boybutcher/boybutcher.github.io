@@ -1,1 +1,3 @@
-console.log('script is connected...');
+import { navBar } from './navBar/index.js';
+
+document.appendChild(navBar);
