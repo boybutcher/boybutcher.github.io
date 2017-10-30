@@ -13,10 +13,15 @@ const aboutLink = document.createElement('div');
 aboutLink.className = 'about-link';
 aboutLink.innerHTML = 'about';
 
+const contactLink = document.createElement('div');
+contactLink.className = 'contact-link';
+contactLink.innerHTML = 'contact';
+
 const navChildren = [
   navHeader,
   projectsLink,
   aboutLink,
+  contactLink,
 ];
 
 navChildren.map(navItem => (

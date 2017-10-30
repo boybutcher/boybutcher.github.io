@@ -8,6 +8,7 @@ const scripts = [
 // creates 'script' tag elements
 const scriptConstructor = src => {
   const script = document.createElement('script');
+  script.type = 'text/javascript'
   script.src = src;
   return script;
 }
