@@ -1,6 +1,3 @@
-const aboutContainer = document.createElement('div');
-aboutContainer.className = 'about-container';
-
 const aboutHeader = document.createElement('h2');
 aboutHeader.className = 'about-header';
 aboutHeader.innerHTML = 'about.';
@@ -15,7 +12,5 @@ const children = [
 ];
 
 children.map(child => (
-  aboutContainer.appendChild(child)
+  document.getElementById('about').appendChild(child)
 ));
-
-document.getElementById('about').appendChild(aboutContainer);

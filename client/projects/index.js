@@ -1,6 +1,3 @@
-const projectsContainer = document.createElement('div');
-projectsContainer.className = 'projects-container';
-
 const projectsHeader = document.createElement('h2');
 projectsHeader.className = 'projects-header';
 projectsHeader.innerHTML = 'projects.';
@@ -47,10 +44,8 @@ const createProjectDesc = project => {
   return projectDesc;
 }
 
-projectsContainer.appendChild(projectsHeader);
+document.getElementById('projects').appendChild(projectsHeader);
 
 projects.map(project => (
-  projectsContainer.appendChild(createProjectItem(project))
+  document.getElementById('projects').appendChild(createProjectItem(project))
 ));
-
-document.getElementById('projects').appendChild(projectsContainer);
