@@ -18,4 +18,4 @@ children.map(child => (
   aboutContainer.appendChild(child)
 ));
 
-document.body.appendChild(aboutContainer);
+document.getElementById('about').appendChild(aboutContainer);

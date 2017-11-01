@@ -10,6 +10,7 @@ const scriptConstructor = src => {
   const script = document.createElement('script');
   script.type = 'text/javascript'
   script.src = src;
+  script.defer = 'defer';
   return script;
 }
 
@@ -19,6 +20,6 @@ const appendScript = script => {
 }
 
 // creates all scripts based on items within 'scripts' array
-scripts.map((source) => (
+scripts.forEach((source) => (
   appendScript(source)
 ))

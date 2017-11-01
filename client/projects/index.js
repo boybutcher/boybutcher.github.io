@@ -53,4 +53,4 @@ projects.map(project => (
   projectsContainer.appendChild(createProjectItem(project))
 ));
 
-document.body.appendChild(projectsContainer);
+document.getElementById('projects').appendChild(projectsContainer);

@@ -28,4 +28,4 @@ navChildren.map(navItem => (
   navBar.appendChild(navItem)
 ))
 
-document.body.appendChild(navBar);
+document.getElementById('navbar').appendChild(navBar);
