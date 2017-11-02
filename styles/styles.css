@@ -1,4 +1,26 @@
 body {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+#navbar {
+  display: flex;
+  flex: 0 0 100%;
+  align-items: flex-end;
+}
+
+.nav-header {
+  font-size: xx-large;
+  cursor: default;
+}
+
+.link {
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #e3e3e3;
+}

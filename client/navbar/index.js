@@ -1,14 +1,24 @@
-const navHeader = document.createElement('h1');
+const navHeader = document.createElement('div');
 navHeader.className = 'nav-header';
 navHeader.innerHTML = 'bryan nguyen';
 
+const clickLinkHandler = (link) => {
+  console.log(`scrolling to ${link.innerHTML}...`)
+}
+
 const projectsLink = document.createElement('div');
-projectsLink.className = 'projects-link';
+projectsLink.className = 'projects link';
 projectsLink.innerHTML = 'projects';
+projectsLink.onclick = () => {
+  clickLinkHandler(projectsLink);
+}
 
 const aboutLink = document.createElement('div');
-aboutLink.className = 'about-link';
+aboutLink.className = 'about link';
 aboutLink.innerHTML = 'about';
+aboutLink.onclick = () => {
+  clickLinkHandler(aboutLink);
+}
 
 const navChildren = [
   navHeader,
