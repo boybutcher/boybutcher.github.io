@@ -3,7 +3,7 @@ navHeader.className = 'nav-header';
 navHeader.innerHTML = 'bryan nguyen';
 
 const clickLinkHandler = (link) => {
-  console.log(`scrolling to ${link.innerHTML}...`)
+  document.getElementById(link.innerHTML).scrollIntoView(true);
 }
 
 const projectsLink = document.createElement('div');
