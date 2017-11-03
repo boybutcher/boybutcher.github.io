@@ -8,6 +8,7 @@ body {
   display: flex;
   flex: 0 0 100%;
   align-items: flex-end;
+  margin-bottom: 15px
 }
 
 .nav-header {
@@ -41,7 +42,11 @@ body {
 }
 
 .image-container {
-  flex-grow: 1
+  flex-grow: 1;
+}
+
+.project-image {
+  width: 450px;
 }
 
 .desc-container {

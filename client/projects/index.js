@@ -37,6 +37,7 @@ const createImage = project => {
   const projectImage = document.createElement('img');
   projectImage.className = 'project-image';
   projectImage.src = project.image;
+  projectImage.alt = project.name;
   imageContainer.appendChild(projectImage);
   return imageContainer
 };
@@ -45,8 +46,8 @@ const CreateDescContainer = project => {
   const descContainer = document.createElement('div')
   descContainer.className = 'desc-container';
   descContainer.appendChild(createProjectName(project));
-  descContainer.appendChild(createProjectStack(project));
   descContainer.appendChild(createProjectDesc(project));
+  descContainer.appendChild(createProjectStack(project));
   return descContainer;
 }
 
