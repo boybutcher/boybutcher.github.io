@@ -1,40 +1,67 @@
-const projectsHeader = document.createElement('h2');
+const projectsHeader = document.createElement('div');
 projectsHeader.className = 'projects-header';
 projectsHeader.innerHTML = 'projects.';
 
 const projects = [
   {
-    image: 'http://myhswm.org/images/sized/images/animals/Sashacatcrop-256x256.jpeg',
+    image: 'assets/artpoint.jpeg',
     name: 'ArtPoint',
-    description: `Lorem Khaled Ipsum is a major key to success. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh. Bless up. You smart, you loyal, you a genius. Special cloth alert. Wraith talk. Let’s see what Chef Dee got that they don’t want us to eat. I’m up to something. Hammock talk come soon. The key to more success is to have a lot of pillows. Lion! Cloth talk. Congratulations, you played yourself. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. You see the hedges, how I got it shaped up? It’s important to shape up your hedges, it’s like getting a haircut, stay fresh.`,
+    stack: 'React/Redux, React Router, Postgres, Heroku, Cloudinary & Stripe API',
+    description: 'An eBay for art.',
   },
   {
-    image: 'https://pbs.twimg.com/profile_images/737359467742912512/t_pzvyZZ_400x400.jpg',
+    image: 'assets/daytripper.jpeg',
     name: 'DayTripper',
-    description: `Cloth talk. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. Eliptical talk. Bless up. Congratulations, you played yourself. Let’s see what Chef Dee got that they don’t want us to eat. Mogul talk. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile.`,
-  }
+    stack: 'React, MongoDB, Google Maps & Yelp API',
+    description: 'an itinerary planning app.',
+  },  
+  {
+    image: 'assets/familihr.jpeg',
+    name: 'FamiliHR',
+    stack: 'React, MongoDB, Google Maps & Yelp API',
+    description: 'a spacial repitition learning app.',
+  },
 ];
 
 const createProjectItem = project => {
   const projectItem = document.createElement('div');
   projectItem.className = 'project-item';
   projectItem.appendChild(createImage(project));
-  projectItem.appendChild(createProjectName(project));
-  projectItem.appendChild(createProjectDesc(project));
+  projectItem.appendChild(CreateDescContainer(project));
   return projectItem;
 };
 
 const createImage = project => {
+  const imageContainer = document.createElement('div');
+  imageContainer.className = 'image-container';
   const projectImage = document.createElement('img');
+  projectImage.className = 'project-image';
   projectImage.src = project.image;
-  return projectImage;
+  imageContainer.appendChild(projectImage);
+  return imageContainer
 };
 
+const CreateDescContainer = project => {
+  const descContainer = document.createElement('div')
+  descContainer.className = 'desc-container';
+  descContainer.appendChild(createProjectName(project));
+  descContainer.appendChild(createProjectStack(project));
+  descContainer.appendChild(createProjectDesc(project));
+  return descContainer;
+}
+
 const createProjectName = project => {
-  const projectName = document.createElement('h4');
-  project.className = 'project-name';
+  const projectName = document.createElement('div');
+  projectName.className = 'project-name';
   projectName.innerHTML = project.name;
   return projectName;
+}
+
+const createProjectStack = project => {
+  const projectStack = document.createElement('div');
+  projectStack.className = 'project-stack';
+  projectStack.innerHTML = project.stack;
+  return projectStack;
 }
 
 const createProjectDesc = project => {

@@ -3,6 +3,7 @@ const scripts = [
   './client/navbar/index.js',
   './client/projects/index.js',
   './client/about/index.js',
+  './client/footer/index.js',
 ];
 
 // creates 'script' tag elements
