@@ -46,10 +46,18 @@ paraFive.innerHTML += '.';
 aboutDesc.appendChild(paraFive);
 
 const paraSix = document.createElement('p');
-paraSix.innerHTML = `In my free time, I love working on `;
-paraSix.appendChild(createAboutLink('personal projects', 'https://github.com/boybutcher/shell.'));
-paraSix.innerHTML += ` that let hone my skills while enabling me to connect with my users in new and interesting ways.`;
+paraSix.innerHTML = `I love using different `;
+paraSix.appendChild(createAboutLink('different', 'https://github.com/boybutcher/shell./blob/master/server.js'));
+paraSix.innerHTML += ' ';
+paraSix.appendChild(createAboutLink('APIs', 'https://github.com/boybutcher/ArtPoint/blob/master/server/controllers/imageUpload.js'));
+paraSix.innerHTML += ` to provide a rich and unique experience.`;
 aboutDesc.appendChild(paraSix);
+
+const paraSeven = document.createElement('p');
+paraSeven.innerHTML = `In my free time, I love working on `;
+paraSeven.appendChild(createAboutLink('personal projects', 'https://github.com/boybutcher/shell.'));
+paraSeven.innerHTML += ` that let hone my skills while enabling me to connect with my users in new and interesting ways.`;
+aboutDesc.appendChild(paraSeven);
 
 const aboutContainer = document.createElement('div');
 aboutContainer.className = 'about-container';

@@ -16,6 +16,11 @@ a:hover {
   color: #e3e3e3;
 }
 
+p {
+  margin-top: .5em;
+  margin-bottom: .5em
+}
+
 #navbar {
   display: flex;
   flex: 0 0 100%;
