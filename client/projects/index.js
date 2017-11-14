@@ -71,7 +71,7 @@ const createProjectStack = project => {
 }
 
 const createProjectDesc = project => {
-  const projectDesc = document.createElement('div');
+  const projectDesc = document.createElement('em');
   projectDesc.className = 'project-description';
   projectDesc.innerHTML = project.description;
   return projectDesc;
