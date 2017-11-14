@@ -6,18 +6,21 @@ const projects = [
   {
     image: 'assets/artpoint.jpeg',
     name: 'ArtPoint',
+    source: 'https://github.com/boybutcher/ArtPoint',
     stack: 'React/Redux, React Router, Postgres, Heroku, Cloudinary & Stripe API',
     description: 'An eBay for art.',
   },
   {
     image: 'assets/daytripper.jpeg',
     name: 'DayTripper',
+    source: 'https://github.com/boybutcher/DayTripper',
     stack: 'React, MongoDB, Google Maps & Yelp API',
     description: 'an itinerary planning app.',
   },  
   {
     image: 'assets/familihr.jpeg',
     name: 'FamiliHR',
+    source: 'https://github.com/boybutcher/FamiliHR',
     stack: 'React, MongoDB, Google Maps & Yelp API',
     description: 'a spacial repitition learning app.',
   },
@@ -52,9 +55,11 @@ const CreateDescContainer = project => {
 }
 
 const createProjectName = project => {
-  const projectName = document.createElement('div');
+  const projectName = document.createElement('a');
   projectName.className = 'project-name';
+  projectName.href = project.source;
   projectName.innerHTML = project.name;
+  projectName.target = '_blank';
   return projectName;
 }
 
