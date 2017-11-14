@@ -1,6 +1,6 @@
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -42,7 +42,9 @@ body {
 }
 
 .image-container {
-  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-image {
@@ -54,6 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-name {
@@ -81,8 +84,20 @@ body {
   flex-wrap: wrap;
 }
 
+.about-container {
+  display: flex;
+}
+
 .about-header {
+  display: flex;
   font-size: x-large
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 25px;
 }
 
 .dev-img {
