@@ -48,7 +48,7 @@ aboutDesc.appendChild(paraFive);
 const paraSix = document.createElement('p');
 paraSix.innerHTML = `In my free time, I love working on `;
 paraSix.appendChild(createAboutLink('personal projects', 'https://github.com/boybutcher/shell.'));
-paraSix.innerHTML += ` that let me connect with my users in new and interesting ways.`;
+paraSix.innerHTML += ` that let hone my skills while enabling me to connect with my users in new and interesting ways.`;
 aboutDesc.appendChild(paraSix);
 
 const aboutContainer = document.createElement('div');
