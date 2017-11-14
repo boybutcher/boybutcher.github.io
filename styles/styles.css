@@ -6,6 +6,16 @@ body {
   align-items: center;
 }
 
+a {
+  color: rgb(2, 88, 99);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #e3e3e3;
+}
+
 #navbar {
   display: flex;
   flex: 0 0 100%;
