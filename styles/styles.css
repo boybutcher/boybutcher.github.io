@@ -4,6 +4,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   align-items: center;
+  font-family: 'Barlow', sans-serif;
 }
 
 a {
@@ -36,6 +37,7 @@ p {
   font-size: xx-large;
   cursor: default;
   margin-left: 2rem;
+  font-weight: bold;
 }
 
 .link {
@@ -65,6 +67,7 @@ p {
 .projects-header {
   font-size: x-large;
   margin-bottom: .5rem;
+  font-weight: bold;
 }
 
 .project-item {
@@ -129,6 +132,7 @@ p {
   font-size: x-large;
   margin-top: 1rem;
   margin-bottom: .5rem;
+  font-weight: bold;
 }
 
 .about-description {
@@ -155,4 +159,5 @@ p {
   font-size: x-large;
   cursor: default;
   margin-left: 1rem;
+  font-weight: bold;
 }
