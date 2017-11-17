@@ -9,11 +9,11 @@ body {
 
 a {
   color: rgb(2, 88, 99);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #e3e3e3;
 }
 
@@ -42,7 +42,7 @@ p {
 
 .link {
   margin-bottom: 5px;
-  margin-left: 25px;
+  margin-left: 1rem;
 }
 
 .link:hover {
@@ -59,7 +59,6 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 3rem;
   width: 80%;
   animation: fadein 3s;
 }
@@ -68,6 +67,7 @@ p {
   font-size: x-large;
   margin-bottom: .5rem;
   font-weight: bold;
+  margin-top: 1rem;
 }
 
 .project-item {
@@ -121,6 +121,7 @@ p {
   flex-wrap: wrap;
   width: 80%;
   animation: fadein 3s;
+  margin-top: 3rem;
 }
 
 .about-container {
@@ -130,7 +131,6 @@ p {
 .about-header {
   display: flex;
   font-size: x-large;
-  margin-top: 1rem;
   margin-bottom: .5rem;
   font-weight: bold;
 }
